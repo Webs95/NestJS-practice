@@ -1,3 +1,3 @@
 export class SuccessResponse {
-	succuss: boolean;
+  succuss: boolean;
 }

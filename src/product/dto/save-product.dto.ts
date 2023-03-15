@@ -1,5 +1,3 @@
 import { ProductModel } from '../product.model';
 
-export class SaveProductDto extends ProductModel {
-
-}
+export class SaveProductDto extends ProductModel {}

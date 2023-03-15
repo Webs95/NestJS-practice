@@ -9,8 +9,11 @@ import { TopPageModel } from './top-page.model';
 
 @Controller('top-page')
 export class TopPageController {
+  constructor(private readonly configService: ConfigService) {}
   @Get('get/:alias')
-  async get(@Param('alias') alias: string): Promise<TopPageModel> {}
+  async get(@Param('alias') alias: string): Promise<TopPageModel> {
+    this.configService.get('TEST');
+  }
 
   @Post('find')
   async getByCategory(

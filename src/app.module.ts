@@ -6,12 +6,12 @@ import { ReviewModule } from './review/review.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-	imports: [
-		ConfigModule.forRoot(),
-		AuthModule,
-		TopPageModule,
-		ProductModule,
-		ReviewModule
-	]
+  imports: [
+    ConfigModule.forRoot(),
+    AuthModule,
+    TopPageModule,
+    ProductModule,
+    ReviewModule,
+  ],
 })
-export class AppModule { }
+export class AppModule {}
